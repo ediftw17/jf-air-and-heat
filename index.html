@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JF Air and Heat | Charlotte's Trusted HVAC Experts | (704) 802-4803</title>
+    <meta name="description" content="JF Air and Heat provides fast, reliable HVAC repair, installation & maintenance in Charlotte, NC. 38+ years experience. BBB A+ rated. Call (704) 802-4803.">
+    <meta name="keywords" content="HVAC Charlotte NC, air conditioning repair Charlotte, heating repair Charlotte, AC installation, JF Air and Heat">
+    <meta property="og:title" content="JF Air and Heat | Charlotte's Trusted HVAC Experts">
+    <meta property="og:description" content="Fast, reliable HVAC repair, installation & maintenance in Charlotte, NC. 38+ years experience. BBB A+ rated. Same-day service available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jf-air-and-heat.vercel.app">
+    <meta property="og:image" content="https://jf-air-and-heat.vercel.app/assets/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://jf-air-and-heat.vercel.app/assets/og-image.jpg">
+    <link rel="canonical" href="https://jf-air-and-heat.vercel.app">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "JF Air and Heat",
+      "url": "https://jf-air-and-heat.vercel.app",
+      "telephone": "+17048024803",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "15108 Edindale Dr",
+        "addressLocality": "Charlotte",
+        "addressRegion": "NC",
+        "postalCode": "28277",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.0603,
+        "longitude": -80.8101
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "87"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jason Ferraccio"
+      },
+      "foundingDate": "2015",
+      "areaServed": "Charlotte, NC"
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --navy: #0A1628;
+            --navy-light: #111D2E;
+            --navy-mid: #162236;
+            --blue: #2563EB;
+            --blue-light: #3B82F6;
+            --blue-glow: rgba(37, 99, 235, 0.3);
+            --orange: #E84C1E;
+            --orange-light: #F06030;
+            --white: #FFFFFF;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-300: #D1D5DB;
+            --gray-400: #9CA3AF;
+            --gray-500: #6B7280;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --text-primary: #F9FAFB;
+            --text-secondary: #D1D5DB;
+            --text-muted: #9CA3AF;
+            --accent: var(--blue);
+            --accent-light: var(--blue-light);
+            --bg-primary: var(--navy);
+            --bg-secondary: var(--navy-light);
+            --bg-card: var(--navy-mid);
+            --border: rgba(255, 255, 255, 0.08);
+            --shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.02em;
+            line-height: 1.1;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 22, 40, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            background: rgba(10, 22, 40, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .logo-text {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 0.05em;
+            color: var(--white);
+        }
+
+        .logo-text span { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: color var(--transition);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width var(--transition);
+        }
+
+        .nav-links a:hover { color: var(--white); }
+        .nav-links a:hover::after { width: 100%; }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .header-cta:hover {
+            background: var(--accent-light);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px var(--blue-glow);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            margin: 6px 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 72px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 22, 40, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+            padding: 40px 24px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.4s ease;
+        }
+
+        .mobile-menu.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .mobile-menu a {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+            transition: color var(--transition);
+        }
+
+        .mobile-menu a:hover { color: var(--accent); }
+
+        .mobile-menu-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 32px;
+            text-align: center;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-bg-photo {
+            position: absolute;
+            inset: 0;
+            background: url('./assets/hero-bg.jpg') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(17,29,46,0.85) 50%, rgba(37,99,235,0.08) 100%);
+            z-index: 1;
+        }
+
+        .hero-bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: 2;
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--blue-glow) 0%, transparent 70%);
+            top: -100px;
+            right: -100px;
+            z-index: 2;
+            animation: pulseGlow 6s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 760px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 99, 235, 0.15);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            color: var(--blue-light);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 0.03em;
+        }
+
+        .hero-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 6vw, 80px);
+            color: var(--white);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 .accent { color: var(--accent); }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .hero-bullets {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+
+        .hero-bullets li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .hero-bullets li::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            border-radius: 50%;
+            background: rgba(37, 99, 235, 0.15);
+            border: 1px solid rgba(37, 99, 235, 0.4);
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 5l2 2 4-4' stroke='%232563EB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .hero-bullets li strong {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .hero-rating-editorial {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 36px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .hero-rating-score {
+            font-size: clamp(56px, 7vw, 88px);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+        .hero-rating-star-deco { font-size: clamp(22px, 2.5vw, 30px); color: #FBBF24; line-height: 1; margin-bottom: 6px; }
+        .hero-rating-meta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+        }
+        .hero-rating-stars { display: flex; gap: 3px; align-items: center; }
+        .hero-rating-dot { display: none; }
+        .hero-rating-source { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-muted); }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all var(--transition);
+            border: none;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--blue-glow);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255,255,255,0.1);
+            pointer-events: none;
+        }
+
+        .hero-image-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(10, 22, 40, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .hero-image-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22C55E;
+            animation: blink 2s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            position: relative;
+            z-index: 10;
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-secondary);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            text-align: center;
+        }
+
+        .trust-item {
+            padding: 16px;
+        }
+
+        .trust-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 42px;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .trust-label {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* ===== SECTION STYLES ===== */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .section-tag::before,
+        .section-tag::after {
+            content: '';
+            width: 24px;
+            height: 1px;
+            background: var(--accent);
+            opacity: 0.5;
+        }
+
+        .section-title {
+            font-size: clamp(36px, 4vw, 56px);
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 17px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== SERVICES ===== */
+        .services { background: var(--bg-primary); }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transition: transform var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-card:hover::before { transform: scaleX(1); }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: var(--white);
+        }
+
+        .service-card p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .service-card-image {
+            margin-top: 24px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            aspect-ratio: 16/10;
+        }
+
+        .service-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition);
+        }
+
+        .service-card:hover .service-card-image img {
+            transform: scale(1.05);
+        }
+
+        /* ===== WHY CHOOSE US ===== */
+        .why-us {
+            background: var(--bg-secondary);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .why-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .why-list {
+            list-style: none;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 20px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .why-item:last-child { border-bottom: none; }
+
+        .why-item-icon {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            border-radius: 12px;
+            background: rgba(37, 99, 235, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+        }
+
+        .why-item h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--white);
+        }
+
+        .why-item p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ===== TESTIMONIALS — Featured Pull-Quote + Animated Card Layout ===== */
+        .testimonials { background: var(--bg-primary); }
+
+        .testimonial-hero {
+            margin-bottom: 72px;
+            text-align: center;
+            max-width: 860px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .testimonial-hero-quote {
+            font-size: clamp(28px, 4vw, 60px);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--white);
+            letter-spacing: -0.03em;
+            margin-bottom: 28px;
+        }
+        .testimonial-hero-quote .editorial-open { color: var(--accent); opacity: 0.5; }
+        .testimonial-hero-meta { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .testimonial-hero-name { font-weight: 700; font-size: 15px; color: var(--white); }
+        .testimonial-hero-stars { display: flex; gap: 2px; }
+        .editorial-divider-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.25); display: inline-block; }
+        .testimonial-g-inline { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text-muted); }
+        .testimonial-g-inline svg { flex-shrink: 0; }
+
+        .tcard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        .tcard-left { display: flex; flex-direction: column; justify-content: center; }
+        .tcard-badge {
+            display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px;
+            border-radius: 999px; background: rgba(59,130,246,0.12); color: var(--accent);
+            font-size: 13px; font-weight: 600; margin-bottom: 24px; width: fit-content;
+        }
+        .tcard-badge svg { flex-shrink: 0; }
+        .tcard-heading { font-size: clamp(28px, 3.5vw, 48px); font-weight: 800; color: var(--white); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 20px; }
+        .tcard-subtext { font-size: 17px; color: var(--text-muted); line-height: 1.65; max-width: 420px; margin-bottom: 36px; }
+        .tcard-dots { display: flex; align-items: center; gap: 10px; }
+        .tcard-dot { height: 10px; border-radius: 999px; background: rgba(255,255,255,0.2); width: 10px; transition: width 0.3s ease, background 0.3s ease; cursor: pointer; border: none; padding: 0; }
+        .tcard-dot.active { width: 36px; background: var(--accent); }
+
+        .tcard-right { position: relative; min-height: 380px; }
+        .tcard-item {
+            position: absolute; inset: 0; background: var(--bg-secondary);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 36px;
+            display: flex; flex-direction: column; opacity: 0;
+            transform: translateX(60px) scale(0.96); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none;
+        }
+        .tcard-item.active { opacity: 1; transform: translateX(0) scale(1); pointer-events: auto; z-index: 2; }
+        .tcard-stars { display: flex; gap: 4px; margin-bottom: 20px; }
+        .tcard-quote-icon { position: absolute; top: 36px; right: 36px; opacity: 0.1; }
+        .tcard-text { font-size: clamp(16px, 1.6vw, 19px); color: var(--text-secondary); line-height: 1.7; font-style: italic; flex: 1; margin-bottom: 28px; }
+        .tcard-sep { height: 1px; background: rgba(255,255,255,0.08); margin-bottom: 24px; }
+        .tcard-author { display: flex; align-items: center; gap: 14px; }
+        .tcard-avatar { width: 48px; height: 48px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px; color: var(--white); flex-shrink: 0; }
+        .tcard-name { font-weight: 700; font-size: 15px; color: var(--white); }
+        .tcard-detail { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+        .tcard-deco-bl { position: absolute; bottom: -16px; left: -16px; width: 80px; height: 80px; border-radius: 14px; background: rgba(59,130,246,0.06); pointer-events: none; }
+        .tcard-deco-tr { position: absolute; top: -16px; right: -16px; width: 80px; height: 80px; border-radius: 14px; background: rgba(59,130,246,0.06); pointer-events: none; }
+
+        @media (max-width: 900px) {
+            .tcard-grid { grid-template-columns: 1fr; gap: 48px; }
+            .tcard-right { min-height: 360px; }
+            .tcard-heading { font-size: clamp(26px, 6vw, 40px); }
+        }
+        @media (max-width: 600px) {
+            .tcard-item { padding: 24px; }
+            .tcard-right { min-height: 420px; }
+        }
+
+        /* ===== ABOUT ===== */
+        .about { background: var(--bg-secondary); }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 1;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-experience-badge {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 20px 24px;
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        .about-experience-badge .number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48px;
+            line-height: 1;
+        }
+
+        .about-experience-badge .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .about-text h2 {
+            font-size: clamp(36px, 4vw, 52px);
+            margin-bottom: 24px;
+        }
+
+        .about-text h2 .accent { color: var(--accent); }
+
+        .about-text p {
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-text p strong {
+            color: var(--text-secondary);
+        }
+
+        .about-badges {
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .about-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        /* ===== CONTACT ===== */
+        .contact { background: var(--bg-primary); }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .contact-info > p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-detail-icon {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            border-radius: 12px;
+            background: rgba(37, 99, 235, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+        }
+
+        .contact-detail-text h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 4px;
+            color: var(--white);
+        }
+
+        .contact-detail-text p,
+        .contact-detail-text a {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .contact-detail-text a:hover { color: var(--accent); }
+
+        .contact-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+        }
+
+        .contact-form h3 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .contact-form > p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 18px;
+            color: var(--text-primary);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            transition: border-color var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--blue-glow);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            border-radius: var(--radius);
+            background: var(--accent);
+            color: var(--white);
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            transition: all var(--transition);
+        }
+
+        .btn-submit:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px var(--blue-glow);
+        }
+
+        /* ===== MAP ===== */
+        .map-section {
+            border-top: 1px solid var(--border);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(40%) brightness(0.8) contrast(1.1);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--navy);
+            border-top: 1px solid var(--border);
+            padding: 60px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 48px;
+            padding-bottom: 48px;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            transition: all var(--transition);
+        }
+
+        .footer-social a:hover {
+            background: var(--accent);
+            color: var(--white);
+            border-color: var(--accent);
+        }
+
+        .footer-col h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col a {
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: color var(--transition);
+        }
+
+        .footer-col a:hover { color: var(--accent); }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* ===== FLOATING CTA ===== */
+        .floating-cta {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 998;
+            background: var(--accent);
+            color: var(--white);
+            padding: 16px;
+            border-radius: var(--radius);
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0 8px 32px rgba(37, 99, 235, 0.4);
+            transition: all var(--transition);
+        }
+
+        .floating-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(37, 99, 235, 0.5);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero-content { grid-template-columns: 1fr; gap: 40px; }
+            .hero-image { max-width: 600px; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .about-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .header-cta.desktop { display: none; }
+            .mobile-toggle { display: block; }
+            .mobile-menu { display: block; pointer-events: none; }
+            .mobile-menu.active { pointer-events: all; }
+
+            .hero { min-height: auto; padding: 120px 0 60px; }
+            .hero h1 { font-size: 42px; }
+
+            .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+            .trust-number { font-size: 32px; }
+
+            .section { padding: 64px 0; }
+            .services-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+
+            .floating-cta { display: block; }
+            .footer { padding-bottom: 120px; }
+            .footer-bottom { margin-bottom: 0; }
+
+            .about-grid { gap: 32px; }
+            .about-image { aspect-ratio: 16/10; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .hero h1 { font-size: 36px; }
+            .hero-actions { flex-direction: column; }
+            .hero-actions .btn { width: 100%; justify-content: center; }
+            .trust-grid { grid-template-columns: 1fr 1fr; }
+            .contact-form { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:0;z-index:9999;padding:8px 16px;background:var(--accent);color:#fff;font-weight:600;border-radius:0 0 8px 0" onfocus="this.style.left='0'">Skip to main content</a>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">JF</div>
+                <div class="logo-text">JF AIR <span>&</span> HEAT</div>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="tel:7048024803" class="header-cta desktop">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (704) 802-4803
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#why-us" onclick="closeMobile()">Why Us</a>
+        <a href="#reviews" onclick="closeMobile()">Reviews</a>
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+        <a href="tel:7048024803" class="mobile-menu-cta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (704) 802-4803
+        </a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="main">
+        <div class="hero-bg">
+            <div class="hero-bg-photo"></div>
+            <div class="hero-bg-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div>
+                    <div class="hero-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        BBB A+ Rated &bull; Serving Charlotte Since 2015
+                    </div>
+                    <h1>CHARLOTTE'S TRUSTED <span class="accent">HVAC</span> EXPERTS</h1>
+                    <p class="hero-subtitle">Fast, reliable heating and cooling service backed by 38+ years of hands-on experience.</p>
+                    <ul class="hero-bullets">
+                        <li><strong>Service fee waived</strong> on any repair over <strong>$250</strong></li>
+                        <li><strong>90% of repairs</strong> completed same day</li>
+                        <li><strong>All brands &amp; models</strong> — no job turned away</li>
+                    </ul>
+                    <a href="https://www.google.com/maps/search/JF+Air+and+Heat+Charlotte+NC" target="_blank" rel="noopener" class="hero-rating-editorial">
+                        <div class="hero-rating-score">4.3</div>
+                        <div class="hero-rating-meta">
+                            <div class="hero-rating-stars">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24" fill-opacity="0.35"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <div class="hero-rating-dot"></div>
+                            <div class="hero-rating-source">
+                                <svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                                87 verified reviews on Google
+                            </div>
+                        </div>
+                    </a>
+                    <div class="hero-actions">
+                        <a href="tel:7048024803" class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Call (704) 802-4803
+                        </a>
+                        <a href="#contact" class="btn btn-outline">Get Free Estimate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item fade-up">
+                    <div class="trust-number">38+</div>
+                    <div class="trust-label">Years of HVAC Experience</div>
+                </div>
+                <div class="trust-item fade-up">
+                    <div class="trust-number">4.3<span style="font-size:24px">/5</span></div>
+                    <div class="trust-label">Google Rating (87 Reviews)</div>
+                </div>
+                <div class="trust-item fade-up">
+                    <div class="trust-number">A+</div>
+                    <div class="trust-label">BBB Rating</div>
+                </div>
+                <div class="trust-item fade-up">
+                    <div class="trust-number">90%</div>
+                    <div class="trust-label">Same-Day Repairs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-tag">What We Do</div>
+                <h2 class="section-title">OUR SERVICES</h2>
+                <p class="section-subtitle">From emergency repairs to new installations, we keep Charlotte homes comfortable year-round.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <h3>AC REPAIR &amp; SERVICE</h3>
+                    <p>Expert air conditioning diagnostics, repairs, and tune-ups. We work on all brands and models to restore your cooling fast.</p>
+                    <div class="service-card-image">
+                        <img src="./assets/svc-ac-repair.jpg" alt="Air conditioning service in Charlotte" width="400" height="250">
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <h3>HEATING REPAIR</h3>
+                    <p>Don't let a broken heater leave you in the cold. Fast, affordable heating repairs and replacements for furnaces and heat pumps.</p>
+                    <div class="service-card-image">
+                        <img src="./assets/svc-heating.jpg" alt="Heating system repair in Charlotte" width="400" height="250">
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <h3>NEW INSTALLATION</h3>
+                    <p>Upgrade to a modern, energy-efficient HVAC system. We help you choose the right unit for your home and budget.</p>
+                    <div class="service-card-image">
+                        <img src="./assets/svc-install.jpg" alt="New HVAC system installation in Charlotte" width="400" height="250">
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <h3>PREVENTIVE MAINTENANCE</h3>
+                    <p>Keep your system running efficiently with our maintenance plans. Two full services per year, no trip fee included.</p>
+                    <div class="service-card-image">
+                        <img src="./assets/svc-maintenance.jpg" alt="HVAC preventive maintenance service" width="400" height="250">
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <h3>EMERGENCY SERVICE</h3>
+                    <p>HVAC emergencies don't wait, and neither do we. Available 8AM-8PM, Monday through Saturday with Sunday emergency service.</p>
+                    <div class="service-card-image">
+                        <img src="./assets/svc-emergency.jpg" alt="Emergency HVAC service Charlotte" width="400" height="250">
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <h3>COMMERCIAL HVAC</h3>
+                    <p>Reliable commercial heating and cooling solutions for businesses in the Charlotte metro area. We keep your operation running.</p>
+                    <div class="service-card-image">
+                        <img src="./assets/svc-commercial.jpg" alt="Commercial HVAC service Charlotte" width="400" height="250">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section why-us" id="why-us">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-tag">The JF Difference</div>
+                <h2 class="section-title">WHY CHARLOTTE TRUSTS US</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-image fade-up">
+                    <img src="./assets/why-us-tech.jpg" alt="HVAC technician performing quality repair work" width="600" height="450">
+                </div>
+                <div class="fade-up">
+                    <ul class="why-list">
+                        <li class="why-item">
+                            <div class="why-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <h4>38+ Years of Hands-On Experience</h4>
+                                <p>Owner Jason Ferraccio has been in HVAC since 1987. He's worked on every brand and model out there.</p>
+                            </div>
+                        </li>
+                        <li class="why-item">
+                            <div class="why-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+                            </div>
+                            <div>
+                                <h4>No Service Fee Over $250</h4>
+                                <p>If your repair cost exceeds $250, we waive the service call fee entirely. Fair pricing, always.</p>
+                            </div>
+                        </li>
+                        <li class="why-item">
+                            <div class="why-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <h4>90% Same-Day Completion</h4>
+                                <p>Most repairs are diagnosed and fixed on the first visit. We carry common parts so you aren't left waiting.</p>
+                            </div>
+                        </li>
+                        <li class="why-item">
+                            <div class="why-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <h4>BBB A+ Accredited Since 2016</h4>
+                                <p>We've maintained the highest BBB rating because we do right by our customers, every time.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" id="reviews">
+        <div class="container">
+
+            <!-- Featured pull-quote -->
+            <div class="testimonial-hero fade-up">
+                <div class="testimonial-hero-quote">
+                    <span class="editorial-open">"</span>He's the ultimate go-to guy for our family's AC and heating needs for over 13 years. We've recommended him to at least 25 people!"
+                </div>
+                <div class="testimonial-hero-meta">
+                    <span class="testimonial-hero-name">Sherrie Rochester</span>
+                    <span class="editorial-divider-dot"></span>
+                    <div class="testimonial-hero-stars">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <span class="editorial-divider-dot"></span>
+                    <span class="testimonial-g-inline">
+                        <svg width="11" height="11" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Google &middot; 13-year customer
+                    </span>
+                </div>
+            </div>
+
+            <div class="tcard-grid fade-up">
+                <div class="tcard-left">
+                    <div class="tcard-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Trusted by Charlotte homeowners
+                    </div>
+                    <h2 class="tcard-heading">What Charlotte Homeowners Say</h2>
+                    <p class="tcard-subtext">Real reviews from real customers. 87 verified Google reviews and 38+ years of trust.</p>
+                    <div class="tcard-dots" id="tcardDots"></div>
+                </div>
+                <div class="tcard-right">
+                    <div class="tcard-deco-bl"></div>
+                    <div class="tcard-deco-tr"></div>
+
+                    <!-- Card 1: Edward King -->
+                    <div class="tcard-item active" data-tcard="0">
+                        <div class="tcard-stars">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <svg class="tcard-quote-icon" width="64" height="64" viewBox="0 0 24 24" fill="white"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="tcard-text">"Best service technician in the business. Diagnosed the problem immediately, fixed it first time. Top notch guy with exceptional knowledge — wouldn't trust anyone else."</p>
+                        <div class="tcard-sep"></div>
+                        <div class="tcard-author">
+                            <div class="tcard-avatar" style="background: linear-gradient(135deg, #10B981, #065F46);">E</div>
+                            <div>
+                                <div class="tcard-name">Edward King</div>
+                                <div class="tcard-detail"><span class="testimonial-g-inline"><svg width="11" height="11" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Eden Kidane -->
+                    <div class="tcard-item" data-tcard="1">
+                        <div class="tcard-stars">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <svg class="tcard-quote-icon" width="64" height="64" viewBox="0 0 24 24" fill="white"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="tcard-text">"Jason is the first person I call whenever my AC has problems. He's responsive, resolves issues correctly the first time, and never tries to upsell you on things you don't need."</p>
+                        <div class="tcard-sep"></div>
+                        <div class="tcard-author">
+                            <div class="tcard-avatar" style="background: linear-gradient(135deg, #F59E0B, #92400E);">E</div>
+                            <div>
+                                <div class="tcard-name">Eden Kidane</div>
+                                <div class="tcard-detail"><span class="testimonial-g-inline"><svg width="11" height="11" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Larry J. Hoekstra II -->
+                    <div class="tcard-item" data-tcard="2">
+                        <div class="tcard-stars">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <svg class="tcard-quote-icon" width="64" height="64" viewBox="0 0 24 24" fill="white"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="tcard-text">"Came out same day, diagnosed the issue in minutes, had it fixed before dinner. Fair price, no surprises on the bill. This is what good service looks like."</p>
+                        <div class="tcard-sep"></div>
+                        <div class="tcard-author">
+                            <div class="tcard-avatar" style="background: linear-gradient(135deg, #8B5CF6, #4C1D95);">L</div>
+                            <div>
+                                <div class="tcard-name">Larry J. Hoekstra II</div>
+                                <div class="tcard-detail"><span class="testimonial-g-inline"><svg width="11" height="11" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Beth Lutz Guy -->
+                    <div class="tcard-item" data-tcard="3">
+                        <div class="tcard-stars">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <svg class="tcard-quote-icon" width="64" height="64" viewBox="0 0 24 24" fill="white"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="tcard-text">"Responsive, professional, and he always resolves the issue correctly the first time. I've been using Jason for years and I won't call anyone else. Genuinely trustworthy."</p>
+                        <div class="tcard-sep"></div>
+                        <div class="tcard-author">
+                            <div class="tcard-avatar" style="background: linear-gradient(135deg, #EC4899, #831843);">B</div>
+                            <div>
+                                <div class="tcard-name">Beth Lutz Guy</div>
+                                <div class="tcard-detail"><span class="testimonial-g-inline"><svg width="11" height="11" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-up">
+                    <img src="./assets/about-tech.jpg" alt="JF Air and Heat professional HVAC technician at work" width="500" height="500">
+                    <div class="about-experience-badge">
+                        <div class="number">38+</div>
+                        <div class="label">Years Experience</div>
+                    </div>
+                </div>
+                <div class="about-text fade-up">
+                    <div class="section-tag" style="text-align:left;">About JF Air and Heat</div>
+                    <h2>BUILT ON <span class="accent">EXPERIENCE</span>, DRIVEN BY <span class="accent">TRUST</span></h2>
+                    <p><strong>Owner Jason Ferraccio</strong> has been in the HVAC industry since 1987. Originally from Buffalo, NY, Jason moved to Charlotte in 1998 and quickly became a field supervisor at one of the city's largest HVAC companies.</p>
+                    <p>In 2015, Jason launched JF Air and Heat to deliver the kind of service he believed every homeowner deserves -- <strong>honest, affordable, and fast</strong>. Today, he and his team serve Charlotte and the surrounding 50-mile radius with the same hands-on commitment.</p>
+                    <p>Jason lives in South Charlotte with his wife and two children. When he's not on a service call, you might find him with his two pugs. Your comfort is his goal -- superior service without the high cost.</p>
+                    <div class="about-badges">
+                        <div class="about-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            BBB A+ Accredited
+                        </div>
+                        <div class="about-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                            HomeAdvisor Pro
+                        </div>
+                        <div class="about-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            Angi Listed
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-tag">Get In Touch</div>
+                <h2 class="section-title">REQUEST A FREE ESTIMATE</h2>
+                <p class="section-subtitle">Call us directly or fill out the form and we'll get back to you ASAP.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <h3>CONTACT INFORMATION</h3>
+                    <p>We're available Monday through Saturday, 8AM to 8PM, with emergency service on Sundays.</p>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <h4>Phone</h4>
+                            <a href="tel:7048024803">(704) 802-4803</a>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <h4>Location</h4>
+                            <p>15108 Edindale Dr<br>Charlotte, NC 28277</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <h4>Hours</h4>
+                            <p>Mon - Sat: 8:00 AM - 8:00 PM<br>Sun: Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <h4>Service Area</h4>
+                            <p>Charlotte, NC &amp; surrounding<br>areas within 50 miles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form fade-up">
+                    <h3>SEND US A MESSAGE</h3>
+                    <p>We'll respond within 1 business hour during operating hours.</p>
+                    <form action="https://formsubmit.co/jfairandheat@gmail.com" method="POST" id="contact-form">
+                        <input type="hidden" name="_subject" value="New estimate request from website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://jf-air-and-heat.vercel.app#contact">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(704) 555-1234" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="ac-repair">AC Repair</option>
+                                <option value="heating-repair">Heating Repair</option>
+                                <option value="new-installation">New Installation</option>
+                                <option value="maintenance">Preventive Maintenance</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="commercial">Commercial HVAC</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How Can We Help?</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your HVAC issue..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Request Free Estimate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=15108+Edindale+Dr,+Charlotte,+NC+28277&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="JF Air and Heat location in Charlotte, NC"></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">JF</div>
+                        <div class="logo-text">JF AIR <span>&</span> HEAT</div>
+                    </a>
+                    <p>Charlotte's trusted HVAC experts since 2015. Fast, reliable heating and cooling service backed by 38+ years of experience. Your comfort is our goal.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/JFAirAndHeat/" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.yelp.com/biz/jf-air-and-heat-charlotte" target="_blank" rel="noopener" aria-label="Yelp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">AC Repair & Service</a></li>
+                        <li><a href="#services">Heating Repair</a></li>
+                        <li><a href="#services">New Installation</a></li>
+                        <li><a href="#services">Preventive Maintenance</a></li>
+                        <li><a href="#services">Emergency Service</a></li>
+                        <li><a href="#services">Commercial HVAC</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:7048024803">(704) 802-4803</a></li>
+                        <li>15108 Edindale Dr</li>
+                        <li>Charlotte, NC 28277</li>
+                        <li>Mon-Sat: 8AM - 8PM</li>
+                        <li>Sun: Emergency Only</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JF Air and Heat, LLC. All rights reserved.</p>
+                <p>BBB A+ Accredited Business</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING MOBILE CTA -->
+    <a href="tel:7048024803" class="floating-cta" id="floatingCta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:8px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now - (704) 802-4803
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+
+        mobileToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('active', menuOpen);
+            document.body.style.overflow = menuOpen ? 'hidden' : '';
+
+            const spans = mobileToggle.querySelectorAll('span');
+            if (menuOpen) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(5px, -6px)';
+            } else {
+                spans[0].style.transform = '';
+                spans[1].style.opacity = '';
+                spans[2].style.transform = '';
+            }
+        });
+
+        function closeMobile() {
+            menuOpen = false;
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+            const spans = mobileToggle.querySelectorAll('span');
+            spans[0].style.transform = '';
+            spans[1].style.opacity = '';
+            spans[2].style.transform = '';
+        }
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            header.classList.toggle('scrolled', scrollY > 50);
+            lastScroll = scrollY;
+        });
+
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, i * 100);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Testimonial card rotation
+        (function() {
+            const cards = document.querySelectorAll('.tcard-item');
+            const dotsContainer = document.getElementById('tcardDots');
+            if (!cards.length || !dotsContainer) return;
+            let activeIndex = 0;
+            let timer;
+            cards.forEach((_, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'tcard-dot' + (i === 0 ? ' active' : '');
+                btn.setAttribute('aria-label', 'View testimonial ' + (i + 1));
+                btn.addEventListener('click', () => goTo(i));
+                dotsContainer.appendChild(btn);
+            });
+            function goTo(index) {
+                cards[activeIndex].classList.remove('active');
+                dotsContainer.children[activeIndex].classList.remove('active');
+                activeIndex = index;
+                cards[activeIndex].classList.add('active');
+                dotsContainer.children[activeIndex].classList.add('active');
+                resetTimer();
+            }
+            function resetTimer() {
+                clearInterval(timer);
+                timer = setInterval(() => goTo((activeIndex + 1) % cards.length), 6000);
+            }
+            resetTimer();
+        })();
+
+        // Form submission handled natively by formsubmit.co
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
